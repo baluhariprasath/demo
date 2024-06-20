@@ -1,0 +1,299 @@
+/*--------------- header-------------*/ 
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+header{
+	position: relative;
+	right: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 9%;
+	background: gray;
+}
+
+#logo{
+	font-size: 35px;
+	font-weight: 700;
+	color: #000;
+}
+
+.nav-list{
+	display: flex;
+}
+
+.nav-list a{
+	margin-left: 60px;
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 20px;
+	border-bottom: 3px solid transparent;
+	transition: all .55s ease;
+	color: #000;
+}
+
+.nav-list a:hover{
+	border-bottom: 3px solid black;
+}
+
+
+/*--------------- table-------------
+table {
+	display: table;
+    width: 80%;
+    table-layout: inherit;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #e2e2e2;
+}*/
+
+
+/*--------------- form-------------
+body {
+    
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+form textarea {
+    resize: vertical;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+form button:hover {
+    background-color: #45a049;
+}*/
+
+
+/*--------------- selectors, colors, text-styling-------------
+body {
+    font-family: Arial, sans-serif;
+}
+p{
+	font-size: 20px;
+	text-align: right;
+}
+.highlight {
+    background-color: yellow;
+}
+#special {
+	font-weight: 600;
+    color: red;
+}*/
+
+
+/*--------------- flex layout -------------
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid black;
+}*/
+
+/*--------------- grid layout -------------
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.box {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}*/
+
+/*--------------- responsive -------------
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    h1{
+        background: lightseagreen;
+    }
+    p{
+        font-size: 20px;
+        font-style: italic;
+    }
+}*/
+
+/*--------------- CSS transition -------------
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 2s, transform 2s;
+}
+.box:hover {
+    background-color: red;
+    transform: rotate(45deg);
+}*/
+
+/*--------------- CSS animation -------------
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: move 5s infinite;
+}
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(0); }
+}*/
+
+/*--------------- flexlayout advanced -------------*/
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/*-------------- hero section ------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    width: auto;
+    height: 100%;
+    background-image: url('https://www.freecodecamp.org/news/content/images/size/w2000/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg');
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+section{
+    padding: 10%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-text a{
+    display: inline-flex;
+    color: black;    
+    background: #fff;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(10px);
+}
